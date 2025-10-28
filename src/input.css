@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+.icon-bold {
+  text-shadow: 0 0 1.2px currentColor;
+}
+.myfont {
+  font-family: "Playwrite DE SAS", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.backToTop.active {
+  @apply translate-y-0 opacity-100;
+}
+.header.scrolled {
+  @apply py-4.5 bg-white shadow-md transition-all duration-500;
+  transition-timing-function: cubic-bezier(0.68, -1.55, 027, 1.55);
+}
+
+.header.scrolled .logo,
+.header.scrolled .navlink,
+.header.scrolled .menu-bar {
+  @apply text-black;
+}
+
+.header.scrolled .navlink.active {
+  @apply text-yellow-500;
+}
+
+.header.scrolled .navlink:hover {
+  @apply text-yellow-500;
+}
+.nav-list .active {
+  @apply text-yellow-500;
+}
+
+.mobile-menu.active {
+  @apply right-0;
+}
+
+.section-padding {
+  @apply py-[30px] sm:py-[40px] md:py-[60px] lg:py-[80px] xl:py-[100px] px-[1.5rem] md:px-[4rem] lg:px-[6rem];
+}
+
+.btn {
+  @apply border-0 outline-none cursor-pointer  inline-block;
+}
+
+.btn-primary {
+  @apply py-2 px-10 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition-all duration-500 ease-in-out;
+}
+
+.hero {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.6) 50%
+    ),
+    url("https://t4.ftcdn.net/jpg/02/94/26/33/240_F_294263329_1IgvqNgDbhmQNgDxkhlW433uOFuIDar4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tab-btn.active {
+  @apply bg-yellow-500 text-white;
+}
+
+.fadeIn {
+  animation: fadeInEffect 0.5s ease-in-out;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

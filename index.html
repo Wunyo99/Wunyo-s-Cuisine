@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Plaster&family=Playwrite+DE+SAS:wght@100..400&family=Quattrocento:wght@400;700&family=Roboto+Slab:wght@100..900&family=Rubik+Storm&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./src/images/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./src/main.js" defer></script>
+    <title>Wunyo's Cuisine</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="header fixed top-0 left-0 w-[100%] py-4 px-[1rem] lg:px-[5rem] bg-none z-10 ">
+        <div class="header-container flex items-center justify-between">
+            <div class="header-left flex gap-3 items-center text-yellow-500">
+                <ion-icon name="fast-food-outline" class="text-3xl"></ion-icon>
+                <a href="" class="logo font-bold text-2xl myfont">Wunyo's Cuisine</a>
+            </div>
+            <div class="header-right">
+                <!-- desktop nav -->
+                <nav class="navbar hidden md:block">
+                    <ul class="nav-list flex gap-3 items-center font-medium">
+                        <li class="nav-item ">
+                            <a href="#home"
+                                class="navlink active hover:text-yellow-500 transition-all duration-300 ease-in-out text-white">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#about"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out text-white">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#menu"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out text-white">Menu</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#services"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out text-white">Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#reservation"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out text-white">Reservation</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#contact"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out text-white">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- mobile nav -->
+                <nav
+                    class="mobile-menu md:hidden fixed top-0 right-[-100%] w-[70%] sm:w-[100%] h-[100%] bg-white shadow-xl z-20 overflow-hidden px-4 py-10 transition-all duration-500 ease-in-out">
+                    <span class="close absolute top-2 right-2 text-2xl"><i class="fa-solid fa-xmark"></i></span>
+                    <ul class="nav-list flex flex-col gap-3 font-medium">
+                        <li class="nav-item active "><a href="#home"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out">Home</a>
+                        </li>
+                        <li class="nav-item "><a href="#about"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out">About</a>
+                        </li>
+                        <li class="nav-item "><a href="#menu"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out">Menu</a>
+                        </li>
+                        <li class="nav-item "><a href="#services"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out">Services</a>
+                        </li>
+                        <li class="nav-item "><a href="#reservation"
+                                class="navlink hover:text-yellow-500 transition-all duration-300 ease-in-out">Reservation</a>
+                        </li>
+                        <li class="nav-item"><a href="#contact"
+                                class="navlink  hover:text-yellow-500 transition-all duration-300 ease-in-out">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-bar text-white md:hidden text-2xl">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+        <section class="hero section section-padding h-screen bg-[#f9f9f9] flex flex-col gap-6 justify-center items-center "
+            id="home">
+            <div class="hero-content text-center w-full max-w-lg mx-auto" data-aos="fade-up">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-white">Welcome to <br><span
+                        class="text-yellow-500">Wunyo's Cuisine</span></h1>
+                <p class="text-lg text-white font-medium">Taste beyond expectations-handcrafted dishes made with love
+                    and the finest ingredients.</p>
+                <div>
+                    <a href="#menu" class="btn btn-primary mt-4 font-medium">Explore Menu</a>
+                </div>
+        </section>
+
+        <section class=" section section-padding">
+            <div class="w-full mx-auto text-center mb-16" data-aos="fade-up">
+                <h1 class="font-semibold text-4xl md:text-5xl mb-4">Chef's Handpicked Specials</h1>
+                <p class="text-lg text-gray-500 font-normal">Discover the finest dishes crafted with passion, freshness
+                    amd bold flavor.</p>
+            </div>
+            <div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center" data-aos="fade-up">
+                    <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5">
+                        <img src="https://t4.ftcdn.net/jpg/07/36/38/85/240_F_736388559_jS8tFGXxYe9ame25PJnf8wihWyNjgT82.jpg"
+                            class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4" alt="">
+                        <div class="bg-white shadow-lg py-4 px-3 flex flex-col justify-center">
+                            <p class="text-sm text-red-400 font-medium uppercase mb-2 tracking-widest">Seafood</p>
+                            <h3 class="text-xl font-bold mb-2">Grilled Garlic Butter Oysters</h3>
+                            <p class="text-gray-500 mb-4 font-normal">Succulent oysters grilled to perfection and
+                                drizzled with rich garlic butter.</p>
+                            <a href="" class="btn text-lg font-medium hover:text-yellow-500 transition">Learn More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5">
+                        <img src="https://t4.ftcdn.net/jpg/08/21/67/31/240_F_821673136_TyR1UJALnQW8LXDZjfPneaOVWJKvdGqn.jpg"
+                            class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4" alt="">
+                        <div class="bg-white shadow-lg py-4 px-3 flex flex-col justify-center">
+                            <p class="text-sm text-red-400 font-medium uppercase mb-2 tracking-widest">Italian</p>
+                            <h3 class="text-xl font-bold mb-2">Pasta Primavera</h3>
+                            <p class="text-gray-500 mb-4 font-normal">Classic pasta tossed in olive oil with seasonal
+                                vegetables and herbs.</p>
+                            <a href="" class="btn text-lg font-medium hover:text-yellow-500 transition">Learn More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5">
+                        <img src="https://t3.ftcdn.net/jpg/13/86/96/18/240_F_1386961863_JDrwlYBkip4VY3AHwOwiETC4S8276Rwm.jpg"
+                            class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4" alt="">
+                        <div class="bg-white shadow-lg py-4 px-3 flex flex-col justify-center">
+                            <p class="text-sm text-red-400 font-medium uppercase mb-2 tracking-widest">American</p>
+                            <h3 class="text-xl font-bold mb-2">Gourmet Beef Burger</h3>
+                            <p class="text-gray-500 mb-4 font-normal">Juicy beef patty layered with cheddar, lettuce,
+                                tomato & our secret sauce.</p>
+                            <a href="" class="btn text-lg font-medium hover:text-yellow-500 transition">Learn More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card w-full h-auto xl:h-60 flex flex-col xl:flex-row gap-0 xl:gap-5">
+                        <img src="https://t3.ftcdn.net/jpg/01/77/92/82/240_F_177928235_8YvaJyIaWirOXtA1Oq6rOZILghb7AYz8.jpg"
+                            class="w-full xl:w-60 h-60 object-cover rounded-xl shadow-lg mb-4" alt="">
+                        <div class="bg-white shadow-lg py-4 px-3 flex flex-col justify-center">
+                            <p class="text-sm text-red-400 font-medium uppercase mb-2 tracking-widest">Desert</p>
+                            <h3 class="text-xl font-bold mb-2">Chocolate Lava Cake</h3>
+                            <p class="text-gray-500 mb-4 font-normal">Warm chocolate cake with a gooey molten center
+                                served with vanilla ice cream.</p>
+                            <a href="" class="btn text-lg font-medium hover:text-yellow-500 transition">Learn More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" section section-padding bg-[#fff7f0] " id="about">
+            <div class="about-content grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="w-full h-full" data-aos="fade-right">
+                    <img src="https://t4.ftcdn.net/jpg/02/49/58/23/240_F_249582332_DcR8e5IHqgB32U7AjdBqbjMhhSfkBcaE.jpg"
+                        class="w-full h-full object-cover rounded-xl shadow-xl">
+                </div>
+
+                <div class="w-full lg:max-w-2xl mx-auto " data-aos="fade-left">
+                    <small class="text-yellow-500 uppercase tracking-widest text-sm inline-block font-medium mb-3">Our
+                        Story</small>
+                    <h2 class="text-4xl font-bold md:text-5xl text-gray-800 leading-[1.1] mb-6">Passionately Crafted,
+                        Flawlessly Served</h2>
+                    <p class="text-gray-600 text-lg ">At <span
+                            class="font-semibold text-black capitalize myfont">Wunyo's
+                            Cuisine,</span> we blend timeless culinary traditions with a modern twist. From sourcing the
+                        freshest ingredients to curating bold, unforgettable flavors - we're all about giving you a
+                        dining experience that's warm, welcoming, and deeply satisfying.</p>
+                    <p class="text-gray-600 text-lg py-5">Whether it's a romantic dinner or a casual lunch with friends,
+                        every dish we serve is a
+                        celeberation of taste and creativity.</p>
+                    <a href="menu" class="btn btn-primary font-medium">Explore Our Menu</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class=" section section-padding">
+            <div class="w-full lg:w-[60%] mx-auto text-center mb-16" data-aos="fade-up">
+                <h1 class="text-4xl md:text-5xl font-semibold mb-4">Our Food Gallery</h1>
+                <p class="text-gray-500 text-lg">A glimpse into the mouthwatering dishes we proudly serve everyday at
+                    Wunyo's Cuisine.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center" data-aos="fade-up">
+                <div class="overflow-hidden rounded-xl group shadow-lg w-full h-65 col-span-1 lg:col-span-2">
+                    <img src="https://t3.ftcdn.net/jpg/00/27/57/96/240_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg"
+                        class="w-full object-cover h-full transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl group shadow-lg w-full group row-span-1 lg:row-span-2">
+                    <img src="https://t4.ftcdn.net/jpg/07/28/61/25/240_F_728612579_VFVBSkEiYqXJQ0sNcO2pHrBtf5rHrGOr.jpg"
+                        class="w-full object-cover h-full transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl group shadow-lg w-full h-65">
+                    <img src="https://t3.ftcdn.net/jpg/01/38/24/64/240_F_138246484_jS5ZWDfamy1YxG5ZX53snOxT0frdRip0.jpg"
+                        class="w-full object-cover h-full transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl group shadow-lg w-full h-65">
+                    <img src="https://t3.ftcdn.net/jpg/01/54/14/86/240_F_154148685_yvijeC6L2SFpvqFJ5H1lunPg40FzCAf1.jpg"
+                        class="w-full object-cover h-full transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl group shadow-lg w-full h-65">
+                    <img src="https://t4.ftcdn.net/jpg/04/23/19/51/240_F_423195109_Jh1pW7t6Z1JeP4zeBfF4biJZWXzj5LNF.jpg"
+                        class="w-full object-cover h-full transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-xl group shadow-lg w-full h-65 col-span-1 lg:col-span-2">
+                    <img src="https://t3.ftcdn.net/jpg/13/25/23/52/240_F_1325235223_BbOVEKGizaPYvClqC3lUh9M40RoPHw8t.jpg"
+                        class="w-full object-cover h-full transition-transform duration-500 group-hover:scale-105">
+                </div>
+            </div>
+        </section>
+
+        <section class=" section section-padding bg-[#fff7f0]" id="menu">
+            <div class="heading text-center mb-16" data-aos="fade-up">
+                <h1 class="text-4xl md:text-5xl font-semibold mb-4">Our Delicious Menu</h1>
+                <p class="text-gray-500 text-lg">Explore our chef's most loved dishes, made fresh with passion.</p>
+            </div>
+
+            <div class="tab-btns flex flex-wrap items-center justify-center gap-6 mb-16" data-aos="fade-up">
+                <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 active transition"
+                    data-category="all">All</button>
+                <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition"
+                    data-category="breakfast">Breakfast</button>
+                <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition"
+                    data-category="launch">Launch</button>
+                <button class="btn tab-btn px-5 py-3 bg-gray-200/50 rounded-full hover:bg-yellow-500 transition"
+                    data-category="dinner">Dinner</button>
+            </div>
+
+            <div class="menu-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
+                <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition "
+                    data-category="launch">
+                    <img src="https://t3.ftcdn.net/jpg/14/83/85/40/240_F_1483854032_3jXFXoYsEkdISHUJ0J9BtjSpHO1Nb55q.jpg"
+                        class="w-full h-55 object-cover group-hover:scale-105 transition duration-500" alt="">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-xl font-semibold">Jollof with Chicken</h3>
+                            <span class="text-yellow-500 font-bold text-lg">GHC 100</span>
+                        </div>
+                        <p class="text-sm text-red-400 uppercase font-medium mb-2">Main Dish</p>
+                        <p class="text-gray-600 font-normal">Classic Ghanaian jollof rice served with spicy grilled
+                            chicken.</p>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition "
+                    data-category="dinner">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmsyv9prdaDXZ9Kg-gvR64fDdjBefjFJ1_Gw&s"
+                        class="w-full h-55 object-cover group-hover:scale-105 transition duration-500" alt="">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-xl font-semibold">Banku with Tilapia</h3>
+                            <span class="text-yellow-500 font-bold text-lg">GHC 120</span>
+                        </div>
+                        <p class="text-sm text-red-400 uppercase font-medium mb-2">Main Dish</p>
+                        <p class="text-gray-600 font-normal">Banku served with grilled tilapia and hot pepper sauce.</p>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition "
+                    data-category="launch">
+                    <img src="https://benopcafcateringservices.com/wp-content/uploads/2025/06/Fufu-with-Goat-Light-Soup.jpg"
+                        class="w-full h-55 object-cover group-hover:scale-105 transition duration-500" alt="">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-xl font-semibold">Fufu with Light Soup</h3>
+                            <span class="text-yellow-500 font-bold text-lg">GHC 80</span>
+                        </div>
+                        <p class="text-sm text-red-400 uppercase font-medium mb-2">Main Dish</p>
+                        <p class="text-gray-600 font-normal">Soft cassava and plantain fufu paired with rich
+                            tomato-based light soup and meat.</p>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition "
+                    data-category="breakfast">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3lXtq8nifjp5kutXxRQsKOc0nIzWG0W4wQ&s"
+                        class="w-full h-55 object-cover group-hover:scale-105 transition duration-500" alt="">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-xl font-semibold">Kelewele</h3>
+                            <span class="text-yellow-500 font-bold text-lg">GHC 35</span>
+                        </div>
+                        <p class="text-sm text-red-400 uppercase font-medium mb-2">Snack</p>
+                        <p class="text-gray-600 font-normal">Sweet and spicy fried plantains seasoned with ginger and
+                            chili.</p>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition "
+                    data-category="breakfast">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZcrVRBqCKD8zjMYD20yaTPD8bOeKtcxj-Q&s"
+                        class="w-full h-55 object-cover group-hover:scale-105 transition duration-500" alt="">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-xl font-semibold">Spicy Gizzard</h3>
+                            <span class="text-yellow-500 font-bold text-lg">GHC 55</span>
+                        </div>
+                        <p class="text-sm text-red-400 uppercase font-medium mb-2">Starter</p>
+                        <p class="text-gray-600 font-normal">Tender gizzard pieces marinated in chili and garlic,
+                            grilled on skewers for a bold flavor kick.</p>
+                    </div>
+                </div>
+                <div class="menu-card bg-white rounded-xl shadow-lg overflow-hidden group transition "
+                    data-category="breakfast">
+                    <img src="https://t4.ftcdn.net/jpg/08/45/19/79/240_F_845197906_IZjiHv2BJ7duGqAVoqL0f433RlKDxYUY.jpg"
+                        class="w-full h-55 object-cover group-hover:scale-105 transition duration-500" alt="">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-1">
+                            <h3 class="text-xl font-semibold">Yoghurt Ice cream</h3>
+                            <span class="text-yellow-500 font-bold text-lg">GHC 45</span>
+                        </div>
+                        <p class="text-sm text-red-400 uppercase font-medium mb-2">Desert</p>
+                        <p class="text-gray-600 font-normal">Rich and creamy frozen yoghurt blended with natural flavors
+                            smooth, cool, and irresistibly refreshing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" section section-padding" id="services">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-4">Our Services</h2>
+                <p class="text-gray-500 text-lg">We are more than food, we deliver experience, comfort, and care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
+                <div class="service-card bg-[#fff7f0] rounded-xl shadow-md p-8 hover:shadow-xl transition duration-500">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 ">Dine-In Experience</h3>
+                    <p class="text-gray-600">Enjoy a cozy and elegant atmosphere where every meal is freshly
+                        prepared and served with care. The perfect place to relax, dine, and connect.</p>
+                </div>
+
+                <div class="service-card bg-[#fff7f0] rounded-xl shadow-md p-8 hover:shadow-xl transition duration-500">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 ">Fast Delivery</h3>
+                    <p class="text-gray-600">Craving your favorite meal? Get it delivered hot and fresh right to
+                        your doorstep. Fast, reliable, and always delicious.</p>
+                </div>
+
+                <div class="service-card bg-[#fff7f0] rounded-xl shadow-md p-8 hover:shadow-xl transition duration-500">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 ">Online Reservations</h3>
+                    <p class="text-gray-600">Skip the wait! Reserve your table online in seconds and secure the
+                        perfect spot for your next dining experience.</p>
+                </div>
+                <div class="service-card bg-[#fff7f0] rounded-xl shadow-md p-8 hover:shadow-xl transition duration-500">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 ">Event Catering</h3>
+                    <p class="text-gray-600">From private parties to corporate events, we bring the full restaurant
+                        experience to you with fresh, customized menus and seamless service.</p>
+                </div>
+                <div class="service-card bg-[#fff7f0] rounded-xl shadow-md p-8 hover:shadow-xl transition duration-500">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 ">Vegan & Healthy Options</h3>
+                    <p class="text-gray-600">Enjoy a variety of flavorful vegan and health-conscious dishes made from
+                        the freshest ingredients perfect for every lifestyle.</p>
+                </div>
+                <div class="service-card bg-[#fff7f0] rounded-xl shadow-md p-8 hover:shadow-xl transition duration-500">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 ">Free Wi-Fi & Comfort</h3>
+                    <p class="text-gray-600">Stay connected and unwind in a cozy atmosphere designed for both work and
+                        relaxation, your comfort is our priority.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class=" section section-padding bg-[#fff7f0]">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-4">Meet Our Master Chefs</h2>
+                <p class="text-gray-500 text-lg">Passionate culinary artists behind every delicious plate we serve.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-center" data-aos="fade-up">
+                <div class="chef-card rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition group">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="https://t3.ftcdn.net/jpg/01/78/11/62/240_F_178116233_8By1HOHtDF2nBwSQrDu9nHMOMPgTVgpU.jpg"
+                            alt="" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="p-7">
+                        <h3 class="text-xl font font-semibold mb-1 text-black">Chef Mawunyo</h3>
+                        <p class="text-yellow-500 text-sm mb-2 uppercase font-medium">Ghanaian Cuisine Specialist</p>
+                        <p class="text-gray-500 font-normal text-base">Master of authentic Ghanaian flavors, Chef
+                            Mawunyo brings tradition to life with every vibrant and spicy creation.</p>
+                    </div>
+                </div>
+                <div class="chef-card rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition group">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="https://t4.ftcdn.net/jpg/06/29/53/11/240_F_629531165_WEPrEAz1Cy7sK5EZWOIu4GzawygDocqi.jpg"
+                            alt="" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="p-7">
+                        <h3 class="text-xl font font-semibold mb-1 text-black">Chef Gianluica </h3>
+                        <p class="text-yellow-500 text-sm mb-2 uppercase font-medium">Italian cuisine specialist</p>
+                        <p class="text-gray-500 font-normal text-base">A true craftsman of Italian dining, Chef
+                            Gianluica
+                            blends passion and precision to serve timeless classics with a modern twist.</p>
+                    </div>
+                </div>
+                <div class="chef-card rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition group">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="https://t3.ftcdn.net/jpg/04/97/26/32/240_F_497263209_XQ1AAWaWQbCN0m3NK7eQMd7dNzauWEY0.jpg"
+                            alt="" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="p-7">
+                        <h3 class="text-xl font font-semibold mb-1 text-black">Chef Nora</h3>
+                        <p class="text-yellow-500 text-sm mb-2 uppercase font-medium">Pastry & Dessert artist</p>
+                        <p class="text-gray-500 font-normal text-base">A creative dessert visionary, Chef Nora
+                            transforms sweetness into art with her stunning pastries and delicate confections.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" section section-padding" id="reservation">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-4">Reserve Your Table</h2>
+                <p class="text-gray-500 text-lg">Enjoy a premium dining experience - book your table in advance.</p>
+            </div>
+
+            <div class="w-full md:max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
+                <form action="https://formspree.io/f/xnnojkrn" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6" id="reservation_form">
+                    <div class="col-span-1">
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-700">Full Name:</label>
+                        <input type="text"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" name="name"
+                            placeholder="Your Name" required>
+                    </div>
+                    <div class="col-span-1">
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-700">Email:</label>
+                        <input type="email"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" name="email"
+                            placeholder="you@gmail.com" required>
+                    </div>
+                    <div class="col-span-1">
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-700">Phone:</label>
+                        <input type="tel"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" name="phone number"
+                            placeholder="Phone Number" required>
+                    </div>
+                    <div class="col-span-1">
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-700">Date:</label>
+                        <input type="date"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" name="date"
+                            required>
+                    </div>
+                    <div class="col-span-1">
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-700">Time:</label>
+                        <input type="time"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" name="time"
+                            required>
+                    </div>
+                    <div class="col-span-1">
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-700">Guests:</label>
+                        <input type="number" min="1" max="20"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400" name="guests"
+                            required>
+                    </div>
+                    <div class="col-span-1 md:col-span-2">
+                        <label for="" class="block mb-2 text-sm font-medium text-gray-700">Additional Notes:</label>
+                        <textarea name="additional note"
+                            class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            id="" rows="4"></textarea>
+                    </div>
+                    <div class="col-span-1 md:col-span-2 text-center">
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class=" section section-padding bg-[#fff7f0]">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-semibold mb-4">What Our Guests Say</h2>
+                <p class="text-lg text-gray-500">Real stories from real people who tasted the Wunyo's Cuisine difference
+                </p>
+            </div>
+
+            <div class="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center" data-aos="fade-up">
+                <div
+                    class="testimonial-card w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://t4.ftcdn.net/jpg/00/77/91/73/240_F_77917361_EaOTLo6USgDgyuVFcYVqGCkhZJiZFPvK.jpg"
+                            alt="" class="w-20 h-20 object-cover rounded-full">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-lg font-semibold">Veto Scaletta</h3>
+                            <small class="text-sm font-normal text-gray-500">Business Owner</small>
+                        </div>
+                    </div>
+                    <p class="text-base text-gray-500 italic"><span class="text-yellow-500 text-xl mr-1"><i
+                                class="fa-solid fa-quote-left"></i></span>Absolutely loved the experience! The flavors
+                        were rich and authentic, it felt like home with a touch of elegance.</p>
+                </div>
+                <div
+                    class="testimonial-card w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://t4.ftcdn.net/jpg/04/34/01/23/240_F_434012352_NeMOB7FqWC5eajHyeH4qWeBYqPEBICeV.jpg"
+                            alt="" class="w-20 h-20 object-cover rounded-full">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-lg font-semibold">Kofi</h3>
+                            <small class="text-sm font-normal text-gray-500">Food Blogger</small>
+                        </div>
+                    </div>
+                    <p class="text-base text-gray-500 italic"><span class="text-yellow-500 text-xl mr-1"><i
+                                class="fa-solid fa-quote-left"></i></span>Fast service, warm atmosphere, and the food?
+                        Just perfect. Every dish looked and tasted amazing.</p>
+                </div>
+                <div
+                    class="testimonial-card w-full bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://t4.ftcdn.net/jpg/04/13/55/45/240_F_413554591_BQzOaigFwRTgpoXU8WLY6hhQZYzijQek.jpg"
+                            alt="" class="w-20 h-20 object-cover rounded-full">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-lg font-semibold">Ama</h3>
+                            <small class="text-sm font-normal text-gray-500">Food Enthusiast</small>
+                        </div>
+                    </div>
+                    <p class="text-base text-gray-500 italic"><span class="text-yellow-500 text-xl mr-1"><i
+                                class="fa-solid fa-quote-left"></i></span>From the starters to dessert, everything was
+                        spot on. You can really taste the passion in every bite!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-padding" id="contact">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl mb-4 font-semibold">Get In Touch</h2>
+                <p class="text-gray-500 text-lg">We'd love to hear from you! Reach out with questions, feedback, or
+                    reservations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full lg:max-w-6xl mx-auto" data-aos="fade-up">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                    <p class="text-gray-600 mb-6">Reach us directly via phone, email, or visit us at our location.</p>
+
+                    <div class="space-y-4 text-gray-700">
+                        <div class="flex items-center gap-4">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p>Spintex, Accra, Ghana</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <p>(+233) 245 494 534</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <p>support@wunyo'scuisine.com</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-60 mt-5">
+                        <iframe class="w-full h-full"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15882.079679483582!2d-0.1369061669767672!3d5.637634763553966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf849983684341%3A0x6c2902d726fb93cb!2sSpintex%20Road%2C%20Accra!5e0!3m2!1sen!2sgh!4v1761524766158!5m2!1sen!2sgh"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <form action="https://formspree.io/f/xnnojkrn" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name:</label>
+                            <input type="text" name="name" placeholder="Enter your name"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-md" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email:</label>
+                            <input type="email" name="email" placeholder="Enter your email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-md" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Message:</label>
+                            <textarea name="message" class="w-full px-4 py-3 border border-gray-300 rounded-md" rows="5"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary font-medium">Send Message</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer p-8 md:p-15 bg-[#121212]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
+                <div class="w-full">
+                    <h3 class="text-2xl font-semibold text-white mb-4 myfont">Wunyo's Cuisine</h3>
+                    <p class="text-base leading-relaxed text-gray-300 mb-4">Taste Beyond expectations. Wunyo's Cuisine
+                        is your perfect destination for authentic flavors and
+                        memorable moments.</p>
+
+                    <div class="flex items-center gap-4">
+                        <a href="https://www.facebook.com/me/"
+                            class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-md hover:text-white hover:bg-yellow-500 transition duration-500"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-md hover:text-white hover:bg-yellow-500 transition duration-500"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/mawunyo.anani/"
+                            class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-md hover:text-white hover:bg-yellow-500 transition duration-500"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@MawunyoAnani-vz1bs"
+                            class="w-10 h-10 bg-gray-200/90 flex items-center justify-center text-xl text-yellow-500 rounded-md hover:text-white hover:bg-yellow-500 transition duration-500"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="text-base text-gray-300 capitalize hover:text-yellow-500 transition duration-500"><a
+                                href="#home">home</a></li>
+                        <li class="text-base text-gray-300 capitalize hover:text-yellow-500 transition duration-500"><a
+                                href="#about">about</a></li>
+                        <li class="text-base text-gray-300 capitalize hover:text-yellow-500 transition duration-500"><a
+                                href="#menu">menu</a></li>
+                        <li class="text-base text-gray-300 capitalize hover:text-yellow-500 transition duration-500"><a
+                                href="#services">services</a></li>
+                        <li class="text-base text-gray-300 capitalize hover:text-yellow-500 transition duration-500"><a
+                                href="#reservation">reservation</a></li>
+                        <li class="text-base text-gray-300 capitalize hover:text-yellow-500 transition duration-500"><a
+                                href="#contact">contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Opening Hours</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">Mon - Fri: 11:00 AM - 10:00 PM</li>
+                        <li class="text-gray-300">Sat - Sun: 12:00 pM - 11:00 PM</li>
+                        <li class="text-gray-300">Public Holidays: Open</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300 flex items-center gap-3"><i
+                                class="fa-solid fa-location-dot text-yellow-500"></i>Spintex, Accra, Ghana</li>
+                        <li class="text-gray-300 flex items-center gap-3"><i
+                                class="fa-solid fa-phone text-yellow-500"></i>(+233) 245 494 534</li>
+                        <li class="text-gray-300 flex items-center gap-3"><i
+                                class="fa-solid fa-envelope text-yellow-500"></i>support@wunyo'scuisine.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-500/90 mt-10 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Wunyo's Cuisine. All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <button
+            class="btn fixed backToTop bottom-2 right-4 w-12 h-12 bg-yellow-500 rounded-md text-white text-xl opacity-0 transition duration-500"><i
+                class="fa-solid fa-arrow-turn-up"></i></button>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+        });
+    </script>
+
+</body>
+
+</html>
